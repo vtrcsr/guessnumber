@@ -1,0 +1,145 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+}
+
+:root{
+  --branco: #f5eeee;
+  --azul: #0b276f;
+  --azulclaro: #24aacf;
+}
+
+header{
+  width: 100%;
+  text-align: center;
+  padding: 15px; 
+  box-shadow: inset 1px 1px 4px 1px rgb(0, 0, 0);
+}
+
+header h1{
+  color: var(--azul);
+  font-weight: 600;
+  font-size: 2.2em;
+  
+}
+
+.container{
+  width: 100%;
+  height: 82vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  background: linear-gradient(to left, #e5ecff, #bcf0ff)
+}
+
+form{
+  background-color: var(--azulclaro);
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  margin-top: 10%;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+label{
+  color: var(--branco);
+  font-size: larger;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+input{
+  border: 0;
+  outline: 0;
+  margin: 2% 0px;
+  padding: 10px;
+  font-size: 1em;
+  font-weight: 400;
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.478);
+}
+
+input:focus{
+  box-shadow: inset 2px 2px 2px 2px rgba(0, 0, 0, 0.536);
+}
+
+form button{
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  border-radius: 15px;
+  padding: 4px;
+  background: var(--azul);
+  margin-top: 10px;
+  width: 100%;
+  font-size: 0.8em;
+  font-weight: 500;
+  color: var(--branco);
+  transition: ease 0.2s;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.536);
+
+}
+
+button:hover{
+  background: var(--branco);
+  color: var(--azul);
+}
+
+.resultado{
+   margin-top: 3%;
+   width: 35%;
+   color: #0b276f;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+
+}
+
+.resultado h2{
+  font-weight: bolder;
+  font-size: 1.1rem;
+  margin: 3% 0px;
+}
+
+span{
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+#btnrestart{
+  cursor: pointer;
+  border: none;
+  outline: 0;
+  background: var(--azul);
+  color: var(--branco);
+  transition: ease 0.1s;
+  padding: 5px;
+  border-radius: 5px;
+  width: 10%;
+  margin-top: 18px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.536);
+}
+
+#btnrestart:hover{
+  background: var(--branco);
+  color: #0b276f;
+}
+
+footer{
+  padding: 1rem;
+  text-align: center;
+  background: var(--branco);
+  color: var(--azul);
+  font-weight: bolder;
+  font-size: 1rem;
+  box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.536);
+}
